@@ -1,0 +1,172 @@
+*{
+    font-family: Calibri, sans-serif;
+    margin: 0px;
+    
+}
+
+p{
+    font-size: 14px;
+}
+
+body{
+    background-color: #fdf8f4;
+}
+
+#container{
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 8vh auto;
+    grid-template-areas:
+    "h h"
+    "b i"
+    "b i";
+}
+
+#header {
+    grid-area: h;
+    text-align: center;
+    padding: 10px;
+    background-color: #B93848;
+}
+
+h1{
+    color: #fdf8f4;
+}
+
+#gameBoard{
+    grid-area: b;
+    padding: 30px;
+}
+
+#info{
+    grid-area: i;
+    /* background-color: rgb(35,38,33,0.2); */
+    padding: 10px;
+}
+
+.board {
+    margin: auto;
+    border-spacing: 0px;
+}
+
+.tile{
+    float: left;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.darkTile {
+    /* background-color : #232621; */
+    background-color: #BA7A3A;
+}
+
+.lightTile {
+    /* background-color:#B93848; */
+    background-color: #F0D2B4;
+}
+
+
+
+.checker{
+    display: flex;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    
+}
+.checker i {
+    font-size: 24px;
+    margin: auto;
+    color: rgba(255,255,255, 0.7);
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.blackChecker {
+    background-color: #232621;
+}
+
+.redChecker {
+    background-color: #B93848;
+}
+
+.selected {
+    border: 3px solid rgba(255,255,255, 0.6);
+}
+
+.highlight {
+    background-color: #704923;
+}
+
+.disable {
+    pointer-events: none;
+}
+
+#status {
+    background-color: #F0D2B4;
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.record {
+    border-radius: 10px;
+    background-color: #F0D2B4;
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#settings {
+    background-color: #F0D2B4;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    height: 200px;
+}
+
+button{
+    border-radius: 5px;
+    height: 45px;
+    border: 0px solid rgba(255,255,255, 0.6);
+    background-color:rgba(255,255,255, 0.6);
+    margin: 5px;
+    cursor: pointer;
+    
+}
+
+#username {
+width: 95%;
+  padding: 12px 20px;
+  margin: 5px;
+  display: inline-block;
+  border: 1px solid rgba(255,255,255, 0.6);
+  background-color: rgba(255,255,255, 0.6);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 950px) {
+    .tile{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .tile{
+        width: 50px;
+        height: 50px;
+    }
+}

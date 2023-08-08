@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Checker</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="icon" type="image/x-icon" href="https://play-lh.googleusercontent.com/_TFbRM3adraOfJPlvvfxgl-YBIIjqDYYHcwQyc64a1_W1qSltCUiNKzU1NRDY4nZd-o=w480-h960-rw">
+    </head>
+    <body>
+        <div id="container">
+        <div id="header">
+            <h1>Checkers</h1>
+        </div>
+        <div id="gameBoard">
+            <table class="board"></table>
+        </div>
+        <div id="info">
+            <div id="status">
+                <p>To play, click "Register" to obtain a username!</p>
+                
+            </div>
+            <div id="firstPlayer" class="record">
+                <h5>First player (Red)</h5>
+                <p>Username: <span id="username1"></span></p>
+                <p>Score: <span id="score1"></span></p>
+            </div>
+            <div id="secondPlayer" class="record">
+                <h5>Second player (Black)</h5>
+                <p>Username: <span id="username2"></span></p>
+                <p>Score: <span id="score2"></span></p>
+            </div>
+            <div id="settings">
+                <button id="register">Register</button>
+                <input type="text" id="username" name="username"/>
+                <button id="try-game">Try Game</button>
+                <button id="get-move" disabled>Get their move</button>
+                <button id="send-move" disabled>Send my move</button>
+                <button id="quit-game" disabled>Quit Game</button>
+            </div>
+            
+        </div>
+    </div>
+    </body>
+    
+</html>

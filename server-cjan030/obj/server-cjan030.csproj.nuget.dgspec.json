@@ -1,0 +1,75 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/jantchan/Documents/UoA/Sem1/CS711/A2/server-cjan030/server-cjan030.csproj": {}
+  },
+  "projects": {
+    "/Users/jantchan/Documents/UoA/Sem1/CS711/A2/server-cjan030/server-cjan030.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jantchan/Documents/UoA/Sem1/CS711/A2/server-cjan030/server-cjan030.csproj",
+        "projectName": "server-cjan030",
+        "projectPath": "/Users/jantchan/Documents/UoA/Sem1/CS711/A2/server-cjan030/server-cjan030.csproj",
+        "packagesPath": "/Users/jantchan/.nuget/packages/",
+        "outputPath": "/Users/jantchan/Documents/UoA/Sem1/CS711/A2/server-cjan030/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/jantchan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNet.WebApi.Cors": {
+              "target": "Package",
+              "version": "[5.2.9, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
